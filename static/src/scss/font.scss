@@ -29,3 +29,142 @@
 body{
     font-family: Tajawal-Regular !important;
 }
+body.rtl{direction:rtl}
+/**************
+* By ZEC-CS, 2013
+* Tested with openerp v7
+**************/
+.rtl .openerp .oe_left {float: right;margin:0px 0px 0px 8px}
+.rtl .openerp th, .rtl .openerp td {text-align: right;}
+.rtl .openerp .oe_leftbar {
+border-left: 1px solid #AFAFB6;
+border-right: 0px solid #AFAFB6;
+}
+.rtl .openerp .oe_dropdown_menu{
+right:0px;
+}
+.rtl .openerp .oe_dropdown_menu > li > a {
+width:115px;
+}
+/*--------------------------Form View------------------------------------*/
+.rtl .openerp .oe_form td.oe_form_group_cell_label {
+border-right: 0px solid #dddddd;
+border-left: 1px solid #dddddd;
+padding: 0px 2px;
+}
+.rtl .openerp .oe_form td.oe_form_group_cell + .oe_form_group_cell {
+    padding: 0 5px 0 0;
+}
+.rtl .openerp .oe_form .oe_input_icon {
+	margin-right: 3px;
+}
+/*---------------select-----------------*/
+.rtl .openerp .oe_form_field_many2one .oe_m2o_cm_button {
+    float: left;
+}
+/*--------------------------left menu------------------------------------*/
+.rtl .openerp .oe_secondary_submenu .oe_secondary_submenu li {
+    margin-right: 20px;
+	margin-left: 0px;
+}
+.rtl .openerp .oe_secondary_submenu .oe_menu_toggler:before {
+	margin-left: 0px;
+    margin-right: 0px;
+}
+.rtl .openerp .oe_secondary_submenu .oe_menu_opened:before {
+	margin-left: 0px;
+    margin-right: 0px;
+}
+
+/*--------------------------Top menu------------------------------------*/
+.rtl .openerp .oe_user_menu li {
+    float: right;
+}
+.rtl .openerp .oe_dropdown_menu {
+    text-align: right;
+}
+
+/*--------------------------Dialog------------------------------------*/
+.rtl .ui-dialog .ui-dialog-title {
+    float: right;
+	padding: 3px 10px;
+}
+/*--------------------------------tabs--------------------------------*/
+.rtl .openerp .oe_notebook > li {
+    float: right;
+}
+
+/*--------------------------------Paging--------------------------------*/
+.rtl .openerp .oe_pager_group li {
+    float: right;
+}
+/*-------------------------------Search------------------------*/
+.rtl .openerp .oe_searchview {
+	float: left;
+}
+.rtl .openerp .oe_searchview .oe_searchview_facets {
+    margin-right: 30px;
+    margin-left: 0px;
+}
+.rtl .openerp .oe_searchview .oe_searchview_facets .oe_searchview_facet{
+	direction:ltr
+}
+/*------------------------Kanban View--------------------*/
+.rtl .openerp .oe_kanban_view .oe_kanban_group_title_vertical{
+direction:ltr
+}
+.rtl .openerp .oe_kanban_view .oe_fold_column .oe_kanban_group_length {
+position: static;
+float: left;
+}
+.rtl .openerp .oe_kanban_view .oe_dropdown_kanban .oe_dropdown_menu {
+    right: 0;
+    left:auto;
+}
+/*------------------------Kanban View--------------------*/
+.rtl .oe_view_manager_view_graph{
+direction:ltr
+}
+/*--------------------application header-------------------*/
+.rtl .openerp .oe_view_manager table.oe_view_manager_header h2 {
+    float: right;
+}
+/*----------------------------Messageing--------------------------*/
+.rtl .openerp .oe_mail .oe_attachment img {
+left:auto
+}
+/*----------------------------followers--------------------------*/
+.rtl .openerp .oe_followers .oe_remove_follower {
+right:auto;
+left:0px;
+}
+.rtl .openerp .oe_followers .oe_invite {
+    float: left;
+}
+.rtl .oe_view_manager_view_gantt{
+direction:ltr;
+}
+/*----------------------------Stages--------------------------*/
+.rtl .openerp .oe_form header ul {
+    float: left;
+}
+.rtl .openerp ul.oe_form_status li:last-child, .rtl .openerp ul.oe_form_status_clickable li:last-child 
+.rtl .openerp ul.oe_form_status li:first-child .label, .rtl .openerp ul.oe_form_status_clickable li:first-child .label
+{
+    border: 0px solid #CACACA;
+}
+.rtl .openerp ul.oe_form_status li .label, .rtl .openerp ul.oe_form_status_clickable li .label {
+	 padding: 7px 24px 7px 7px;
+}
+
+.rtl .openerp ul.oe_form_status li .arrow, .rtl .openerp ul.oe_form_status_clickable li .arrow {
+    margin-left: -3px;
+}
+.rtl .openerp ul.oe_form_status li .arrow span, .rtl .openerp ul.oe_form_status_clickable li .arrow span{
+ margin: 3px -12px 0 0;
+    transform: rotate(230deg);
+	background: -moz-linear-gradient(135deg, #FCFCFC, #DEDEDE) repeat scroll 0 0 transparent;
+}
+.rtl .openerp ul.oe_form_status li.oe_active .arrow span, .rtl .openerp ul.oe_form_status_clickable li.oe_active .arrow span {
+    background: -moz-linear-gradient(135deg, #729FCF, #3465A4) repeat scroll 0 0 transparent;
+}
