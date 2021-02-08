@@ -1,6 +1,6 @@
 {
-    "name": "ETMAM THEME", 
-    "summary": "ETMAM THEME",
+    "name": "ETMAM FONT", 
+    "summary": "ETMAM FONT",
     "version": "13.0", 
     "depends": [
         "web",
